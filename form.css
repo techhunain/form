@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to right, #d0d9f0, #dac9ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 768px;
+    max-width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* box-1 */
+.box-1 {
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 360px;
+    width: 100%;
+}
+
+h1 {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.icons {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons a {
+    height: 40px;
+    width: 40px;
+    border: 3px solid rgb(93, 92, 92);
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.icons a:hover {
+    color: rgb(91, 70, 140);
+}
+
+.p1 {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.inp-1, .inp-2 {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inp {
+    height: 40px;
+    width: 80%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: rgb(240, 236, 236);
+    position: relative; /* Added for placeholder */
+}
+
+.inp input {
+    height: 38px;
+    width: 90%; /* Updated to 100% for proper alignment */
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.inp input::placeholder {
+    color: transparent; /* Hide the default placeholder */
+}
+
+.placeholder {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    transition: 0.2s ease all;
+    color: #827f7f;
+    pointer-events: none; /* So that clicking the label focuses the input */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inp input:focus + .placeholder,
+.inp input:not(:placeholder-shown) + .placeholder {
+    top: -20px;
+    left: 0px;
+    font-size: 15px;
+    color: rgb(91, 70, 140);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.p2 {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(17, 17, 71);
+}
+
+.btn-1 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1 button {
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(91, 70, 140);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* box-2 */
+.box-2 {
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    background: rgb(91, 70, 140);
+}
+
+.box {
+    height: 200px;
+    width: 100%;
+}
+
+.box h1 {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.p3, .p4 {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.btn-2 {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-2 button {
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid #e0e4ec;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.box-3, .box-4 {
+    height: 500px;
+    width: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-3 {
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    background: rgb(91, 70, 140);
+}
+
+.box-4 {
+    background: #fff; /* Keeping the background white for box-4 */
+}
